@@ -1,18 +1,18 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1593469301633.000,
+    "created" : 1593469599270.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "39A48CBF",
-    "lastKnownWriteTime" : 1593469310,
-    "last_content_update" : 1593469310969,
-    "path" : "C:/blog/content/post/2020-06-30-.md",
-    "project_path" : "content/post/2020-06-30-.md",
+    "id" : "D426A93D",
+    "lastKnownWriteTime" : 1593469634,
+    "last_content_update" : 1593469634467,
+    "path" : "C:/blog/content/post/2020-06-29-my-title.Rmd",
+    "project_path" : "content/post/2020-06-29-my-title.Rmd",
     "properties" : {
-        "cursorPosition" : "6,8",
+        "cursorPosition" : "13,12",
         "scrollLine" : "0"
     },
     "read_only" : false,
@@ -21,5 +21,5 @@
     "relative_order" : 2,
     "source_on_save" : false,
     "source_window" : "",
-    "type" : "markdown"
+    "type" : "r_markdown"
 }
