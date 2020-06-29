@@ -1,19 +1,19 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1593468173353.000,
+    "created" : 1593468862672.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3639148924",
-    "id" : "606B623A",
-    "lastKnownWriteTime" : 1593468189,
-    "last_content_update" : 1593468189675,
+    "hash" : "0",
+    "id" : "51265A3",
+    "lastKnownWriteTime" : 1593468902,
+    "last_content_update" : 1593468902527,
     "path" : "C:/blog/content/post/2020-06-30-test-post.Rmd",
     "project_path" : "content/post/2020-06-30-test-post.Rmd",
     "properties" : {
-        "cursorPosition" : "8,8",
-        "scrollLine" : "0"
+        "cursorPosition" : "11,6",
+        "scrollLine" : "6"
     },
     "read_only" : false,
     "read_only_alternatives" : [
