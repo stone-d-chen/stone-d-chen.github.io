@@ -1,0 +1,12 @@
+---
+title: My Test Post
+author: stone
+date: '2020-06-29'
+slug: my-test-post
+categories: []
+tags: []
+---
+
+Test Post
+
+$$\frac{1}{2}$$

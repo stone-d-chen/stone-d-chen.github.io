@@ -1,9 +1,0 @@
----
-title: "hi"
-date: '2020-06-30'
-author: Stone
-slug: My post
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
----
-Test
