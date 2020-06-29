@@ -1,24 +1,24 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1593470269545.000,
+    "created" : 1593470820133.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "745A7C4D",
-    "lastKnownWriteTime" : 1593470269,
-    "last_content_update" : 1593470269,
-    "path" : "C:/blog/content/post/2020-06-30-opst-tpostese.Rmd",
-    "project_path" : "content/post/2020-06-30-opst-tpostese.Rmd",
+    "id" : "9C956FAD",
+    "lastKnownWriteTime" : 1593470825,
+    "last_content_update" : 1593470825362,
+    "path" : "C:/blog/content/post/2020-06-30-math.Rmd",
+    "project_path" : "content/post/2020-06-30-math.Rmd",
     "properties" : {
-        "cursorPosition" : "3,18",
+        "cursorPosition" : "9,16",
         "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 4,
+    "relative_order" : 1,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_markdown"
