@@ -1,8 +1,7 @@
 ---
-title: test post
-author: stone
-date: '2020-06-30'
-slug: test-post
+title: "test post"
+author: "Stone"
+date: 2020-06-30
 categories: []
 tags: []
 ---
