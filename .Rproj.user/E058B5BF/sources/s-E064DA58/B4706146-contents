@@ -10,7 +10,7 @@ tags: []
 # mle and hessian computations
 
 # A formula for the determinant of a compound symmetric covariance matrix
-
+s
 $$\begin{aligned}
 \Sigma&=\left|\begin{array}{cccc}
 \sigma_{11}^{2} & \rho \sigma_{1} \sigma_{2} & \cdots & \rho \sigma_{1} \sigma_{p} \\
