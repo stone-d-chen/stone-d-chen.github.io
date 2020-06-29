@@ -1,0 +1,10 @@
+---
+title: test post
+author: stone
+date: '2020-06-30'
+slug: test-post
+categories: []
+tags: []
+---
+# header
+ $$\frac{1}{2}$$
