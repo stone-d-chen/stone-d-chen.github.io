@@ -12,13 +12,23 @@
     
     
     <item>
+      <title>Calc Equicovariance</title>
+      <link>/2020/06/30/calc-equicovariance/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/30/calc-equicovariance/</guid>
+      <description>The goal is to find the determinant by re-writing \(\Sigma\) as a upper triangular matrix. Then [[Determinant of triangular matrix is the product of the diagonal]]
+We add a new row and new column. We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons. The upper diagonal is so that we can eliminate the terms in the first column that show up.</description>
+    </item>
+    
+    <item>
       <title>Calculating the determinent of an equicovariance matrix</title>
       <link>/2020/06/30/calculating-the-determinent-of-an-equicovariance-matrix/</link>
       <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/06/30/calculating-the-determinent-of-an-equicovariance-matrix/</guid>
-      <description>The goal is to find the determinant by re-writing $\Sigma$ as a upper triangular matrix. Then [[Determinant of triangular matrix is the product of the diagonal]]
- We add a new row and new column. We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons. The upper diagonal is so that we can eliminate the terms in the first column that show up.</description>
+      <description>The goal is to find the determinant by re-writing \(\Sigma\) as a upper triangular matrix. Then [[Determinant of triangular matrix is the product of the diagonal]]
+We add a new row and new column. We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons. The upper diagonal is so that we can eliminate the terms in the first column that show up.</description>
     </item>
     
     <item>

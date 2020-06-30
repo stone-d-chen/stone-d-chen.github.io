@@ -1,11 +1,10 @@
 ---
-title: Calculating the determinent of an equicovariance matrix
+title: Calc Equicovariance
 author: Stone
 date: '2020-06-30'
-slug: calculating-the-determinent-of-an-equicovariance-matrix
+slug: calc-equicovariance
 categories: []
-tags:
-  - math
+tags: []
 ---
 
 
