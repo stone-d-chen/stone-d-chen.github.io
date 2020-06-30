@@ -1,6 +1,6 @@
-.Rproj.user
+*.Rproj.user*
+*.Rproj
 .Rhistory
 .RData
 .Ruserdata
-.DS_Store # if a windows user, Thumbs.db instead
-public/ # if using Netlify
+.DS_Store
