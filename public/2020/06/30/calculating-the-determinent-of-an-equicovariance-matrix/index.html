@@ -51,7 +51,7 @@
 
   <article class="article">
     
-    <span class="article-duration">0 min read</span>
+    <span class="article-duration">2 min read</span>
     
 
     <h1 class="article-title">Calculating the determinent of an equicovariance matrix</h1>
@@ -61,7 +61,44 @@
     
 
     <div class="article-content">
-      
+      <p>The goal is to find the determinant by re-writing $\Sigma$ as a upper triangular matrix. Then [[Determinant of triangular matrix is the product of the diagonal]]</p>
+<ol>
+<li>We add a new row and new column. We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons. The upper diagonal is so that we can eliminate the terms in the first column that show up.</li>
+<li>Eliminate off-diagonals: Multiply the first row by $-\rho\sigma_1$ and add it to the second row. This eliminates the original off diagonal elements of the original first row. Repeat.</li>
+<li>Eliminate new terms in first column: Multiply second column by $\frac{\rho}{\sigma_1(1-\rho)}$ and add to first column. Repeat.</li>
+<li>Take the product of the diagonal.</li>
+</ol>
+<p>$$\begin{aligned}
+\Sigma&amp;=\left|\begin{array}{cccc}
+\sigma_{11}^{2} &amp; \rho \sigma_{1} \sigma_{2} &amp; \cdots &amp; \rho \sigma_{1} \sigma_{p} \<br>
+\rho \sigma_{2} \sigma_{1} &amp; \sigma_{22}^{2} &amp; \cdots &amp; \rho \sigma_{2} \sigma_{p} \<br>
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>
+\rho \sigma_{p} \sigma_{1} &amp; \cdots &amp; \cdots &amp; \sigma_{p p}^{2}
+\end{array}\right|\<br>
+&amp;=\left|\begin{array}{ccccc}
+1 &amp; \sigma_{1} &amp; \sigma_{2} &amp; \cdots &amp; \sigma_{p} \<br>
+0 &amp; \sigma_{11}^{2} &amp; \rho \sigma_{1} \sigma_{2} &amp; \cdots &amp; \rho \sigma_{1} \sigma_{p} \<br>
+0 &amp; \rho \sigma_{2} \sigma_{1} &amp; \sigma_{22}^{2} &amp; \cdots &amp; \rho \sigma_{2} \sigma_{p} \<br>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>
+0 &amp; \rho \sigma_{p} \sigma_{1} &amp; \cdots &amp; \cdots &amp; \sigma_{p p}^{2}
+\end{array}\right|\<br>
+&amp;=\left|\begin{array}{ccccc}
+1 &amp; \sigma_{1} &amp; \sigma_{2} &amp; \cdots &amp; \sigma_{p} \<br>
+-\rho \sigma_{1} &amp; \sigma_{11}^{2}(1-\rho) &amp; 0 &amp; \cdots &amp; 0 \<br>
+-\rho \sigma_{2} &amp; 0 &amp; \sigma_{22}^{2}(1-\rho) &amp; 0 &amp; 0 \<br>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>
+-\rho \sigma_{p} &amp; 0 &amp; 0 &amp; 0 &amp; \sigma_{p p}^{2}
+\end{array}\right|\<br>
+&amp;=\left| \begin{array}{ccccc}
+1+\sum_{i=1}^{p} \frac{\rho}{(1-\rho)} &amp;\sigma_{1} &amp; \sigma_{2} &amp; \cdots &amp; \sigma_{p} \<br>
+0 &amp; \sigma_{11}^{2}(1-\rho) &amp; 0 &amp; \cdots &amp; 0 \<br>
+0 &amp; 0 &amp; \sigma_{22}^{2}(1-\rho) &amp; 0 &amp; 0 \<br>
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \<br>
+0 &amp; 0 &amp; 0 &amp; 0 &amp; \sigma_{p p}^{2}
+\end{array}\right|\<br>
+&amp;=\left(1+\sum_{i=1}^{p} \frac{\rho}{(1-\rho)}\right)\left((1-\rho)^{p} \prod_{i=1}^{p} \sigma_{i i}^{2}\right)
+\end{aligned}$$</p>
+
     </div>
   </article>
 
@@ -85,6 +122,9 @@
     
 
     
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
 
     
   </body>
