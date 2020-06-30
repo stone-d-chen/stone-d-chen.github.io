@@ -12,23 +12,12 @@
     
     
     <item>
-      <title>Test post 2</title>
-      <link>/2020/06/30/test-post-2/</link>
+      <title>Calculating the determinent of an equicovariance matrix</title>
+      <link>/2020/06/30/calculating-the-determinent-of-an-equicovariance-matrix/</link>
       <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/06/30/test-post-2/</guid>
-      <description>Test Post
-$$\frac{1}{2}$$</description>
-    </item>
-    
-    <item>
-      <title>My Test Post</title>
-      <link>/2020/06/29/my-test-post/</link>
-      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/06/29/my-test-post/</guid>
-      <description>Test Post
-\[\frac{1}{2}\]</description>
+      <guid>/2020/06/30/calculating-the-determinent-of-an-equicovariance-matrix/</guid>
+      <description></description>
     </item>
     
   </channel>
