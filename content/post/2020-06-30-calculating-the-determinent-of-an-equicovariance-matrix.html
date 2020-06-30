@@ -11,7 +11,8 @@ slug: calculating-the-determinent-of-an-equicovariance-matrix
 
 <p>The goal is to find the determinant by re-writing <span class="math inline">\(\Sigma\)</span> as a upper triangular matrix. Then [[Determinant of triangular matrix is the product of the diagonal]]</p>
 <ol style="list-style-type: decimal">
-<li>We add a new row and new column. We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons. The upper diagonal is so that we can eliminate the terms in the first column that show up.</li>
+<li>We add a new row and new column. Recall that the determinant can be defined recursively. Since the new matrix as a <span class="math inline">\(1\)</span> in the <span class="math inline">\(\Sigma_{11}\)</span> position, then the determinant remains the same.</li>
+<li>We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons. The upper diagonal is so that we can eliminate the terms in the first column that show up.</li>
 <li>Eliminate off-diagonals: Multiply the first row by <span class="math inline">\(-\rho\sigma_1\)</span> and add it to the second row. This eliminates the original off diagonal elements of the original first row. Repeat.</li>
 <li>Eliminate new terms in first column: Multiply second column by <span class="math inline">\(\frac{\rho}{\sigma_1(1-\rho)}\)</span> and add to first column. Repeat.</li>
 <li>Take the product of the diagonal.</li>
