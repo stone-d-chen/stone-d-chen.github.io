@@ -1,5 +1,5 @@
 ---
-title: Does convergence in measure imply convergence a.s.?
+title: WIP - Does convergence in measure imply convergence a.s.?
 author: Stone
 date: '2020-06-30'
 slug: does-convergence-in-probability-imply-convergence-a-s
@@ -8,8 +8,6 @@ draft: true
 tags:
   - math
 ---
-
-No in fact you can have measureable random in probability which also converge almost no where:
 
 We define $X_i = [a,b] := X_i = I_{[0,1]}/(b-a)$ the indicator RV over $[0,1]$ normalized such that it integrates to 1.
 

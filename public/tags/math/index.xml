@@ -21,5 +21,16 @@
 We add a new row and new column. Recall that the determinant can be defined recursively. Since the new matrix as a \(1\) in the \(\Sigma_{11}\) position, then the determinant remains the same.We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons.</description>
     </item>
     
+    <item>
+      <title>WIP - Does convergence in measure imply convergence a.s.?</title>
+      <link>/2020/06/30/does-convergence-in-probability-imply-convergence-a-s/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/30/does-convergence-in-probability-imply-convergence-a-s/</guid>
+      <description>We define \(X_i = [a,b] := X_i = I_{[0,1]}/(b-a)\) the indicator RV over \([0,1]\) normalized such that it integrates to 1.
+\[\begin{aligned} X_1 &amp;amp; = [0,1] \\ X_2, X_3 &amp;amp; = [0,1/2), [1/2,1] \\ X_4,X_5,X_6 &amp;amp; = [0,1/3), [1/3,2/3), [2/3,1] \\ \dots \end{aligned}\]
+That is we can imagine a box that is shrinking in width while increasing in height.</description>
+    </item>
+    
   </channel>
 </rss>
