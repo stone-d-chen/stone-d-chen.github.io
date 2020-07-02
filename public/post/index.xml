@@ -17,11 +17,8 @@
       <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/07/02/o-notation-depends-on-what-limit-you-re-taking/</guid>
-      <description>Something that confused me about \(O\) notation differences between algorithms and calculus. The notation provides a convenient way of describing the limit of a function \(f(x)\) as \(x\) approaches a specific limit..
-This limit is different between a standard algorithms and calculus course. In algorithms \(x \to \infty\) while in calculus \(x \to 0\).
-For example we have in algorithms:
-\[x^2 + x = O(x^2)\quad x \to \infty\]
-since</description>
+      <description>Something that confused me about \(O\) notation was that it appeared to take different meaning between algorithms and calculus. This was resolved by seeing that the notation provides a convenient way of describing the limit of a function \(f(x)\) as \(x\) approaches a specific limit. This point about the \(O\)-ness of a function being contingent on what limit you were taking was the crux of my confusion.
+This limit is typically different between a standard algorithms and calculus course.</description>
     </item>
     
     <item>
