@@ -55,5 +55,15 @@ We add a new row and new column. Recall that the determinant can be defined recu
 That is we can imagine a box that is shrinking in width while increasing in height.</description>
     </item>
     
+    <item>
+      <title>My Test Post</title>
+      <link>/2020/06/29/my-test-post/</link>
+      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/06/29/my-test-post/</guid>
+      <description>Test Post
+\[\frac{1}{2}\]</description>
+    </item>
+    
   </channel>
 </rss>

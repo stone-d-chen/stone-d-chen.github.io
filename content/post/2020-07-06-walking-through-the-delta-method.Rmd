@@ -66,4 +66,6 @@ We then multiply both sides by $\sqrt{n}$ and we have:
 
 $$\sqrt{n}(\phi(T_n) - \phi(\theta)) - \sqrt{n}\phi'_\theta(T_n - \theta) = o(r_n(T_n - \theta)) = o(O(\sqrt{n}(T_n- \theta)) = o(O(1)) = o(1)$$
 
-By consistency we justify our use of the approximation?
+Then by Slutsky's theorem we have that 
+
+$$\sqrt{n}(\phi(T_n) - \phi(\theta)) \rightsquigarrow \phi'_\theta(T) + 0 $$
