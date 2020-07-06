@@ -25,4 +25,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # path to the favicon, under "static"
     favicon = "favicon.ico"
 
+[[menu.main]]
+    name = "Home"
+    url = "/"
 
