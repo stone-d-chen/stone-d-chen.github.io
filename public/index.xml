@@ -56,16 +56,6 @@ That is we can imagine a box that is shrinking in width while increasing in heig
     </item>
     
     <item>
-      <title>My Test Post</title>
-      <link>/2020/06/29/my-test-post/</link>
-      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/06/29/my-test-post/</guid>
-      <description>Test Post
-\[\frac{1}{2}\]</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
