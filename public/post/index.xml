@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on A Hugo website</title>
+    <title>Posts on A blog by Stone</title>
     <link>/post/</link>
-    <description>Recent content in Posts on A Hugo website</description>
+    <description>Recent content in Posts on A blog by Stone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Walking through the delta method</title>
+      <link>/2020/07/06/walking-through-the-delta-method/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/06/walking-through-the-delta-method/</guid>
+      <description>Imagine we’ve constructed an estimator \(T_n\) for some parameter \(\theta\) but what we really want to know about is \(\phi(\theta)\), some transformation of the parameter.
+Can we use our knowledge of the behavior of \(T_n\) to learn about \(\phi(T_n)\)?
+By the continuous-mapping theorem if \(\phi\) is continuous then:
+if \(T_n \to \theta\)then \(\phi(T_n) \to \phi(\theta)\)By the delta method we have
+if \(\sqrt{n}(T_n - \theta) \rightsquigarrow T\) as \(n \to \infty\)then \(\sqrt{n}(\phi(T_n) - \phi(\theta)) \rightsquigarrow \phi&amp;#39;_\theta(T)\)where \(\phi&amp;#39;_\theta(T) = \phi&amp;#39;(\theta)*T\).</description>
+    </item>
     
     <item>
       <title>O notation depends on what limit you&#39;re taking</title>

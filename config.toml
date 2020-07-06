@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo website"
+title = "A blog by Stone"
 theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = ""
@@ -11,7 +11,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "A blog for pedagogical reasons."
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
@@ -25,9 +25,4 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # path to the favicon, under "static"
     favicon = "favicon.ico"
 
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
 

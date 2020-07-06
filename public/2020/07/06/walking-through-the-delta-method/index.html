@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.73.0" />
+
+
+<title>Walking through the delta method - A blog by Stone</title>
+<meta property="og:title" content="Walking through the delta method - A blog by Stone">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/%3cnil%3e"
+         width=""
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Walking through the delta method</h1>
+
+    
+    <span class="article-date">2020-07-06</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>Imagine we’ve constructed an estimator <span class="math inline">\(T_n\)</span> for some parameter <span class="math inline">\(\theta\)</span> but what we really want to know about is <span class="math inline">\(\phi(\theta)\)</span>, some transformation of the parameter.</p>
+<p>Can we use our knowledge of the behavior of <span class="math inline">\(T_n\)</span> to learn about <span class="math inline">\(\phi(T_n)\)</span>?</p>
+<p>By the <strong>continuous-mapping theorem</strong> if <span class="math inline">\(\phi\)</span> is continuous then:</p>
+<ul>
+<li>if <span class="math inline">\(T_n \to \theta\)</span></li>
+<li>then <span class="math inline">\(\phi(T_n) \to \phi(\theta)\)</span></li>
+</ul>
+<p>By the <strong>delta method</strong> we have</p>
+<ul>
+<li>if <span class="math inline">\(\sqrt{n}(T_n - \theta) \rightsquigarrow T\)</span> as <span class="math inline">\(n \to \infty\)</span></li>
+<li>then <span class="math inline">\(\sqrt{n}(\phi(T_n) - \phi(\theta)) \rightsquigarrow \phi&#39;_\theta(T)\)</span></li>
+</ul>
+<p>where <span class="math inline">\(\phi&#39;_\theta(T) = \phi&#39;(\theta)*T\)</span>.</p>
+<div id="wishful-thinking-about-the-delta-method-if-phi-were-linear" class="section level1">
+<h1>Wishful Thinking About the Delta Method: If <span class="math inline">\(\phi\)</span> were linear</h1>
+<p>I found the result of the delta method a bit strange. If I had to immediately guess the result it would be:</p>
+<p><span class="math display">\[\sqrt{n}(\phi(T_n) - \phi(\theta)) \rightsquigarrow \phi(T)\]</span></p>
+<p>not <span class="math display">\[\rightsquigarrow \phi&#39;_\theta(T).\]</span></p>
+<p>When WOULD this be true? Well if <span class="math inline">\(\phi\)</span> were defined to be a linear function then by linearity:</p>
+<p><span class="math display">\[\sqrt{n}(\phi(T_n) - \phi(\theta)) = \phi(\sqrt{n}(T_n - \theta)) \rightsquigarrow \phi(T)\]</span></p>
+<p>with the last convergence by the continuous mapping theorem.</p>
+<p>But the delta method applies to more than just linear functions <span class="math inline">\(\phi\)</span> so what’s the next logical step?</p>
+<p>We should approximate the function <span class="math inline">\(\phi\)</span> by something linear: the natural candidate is <strong>the derivative</strong>; it’s linear and it approximates.</p>
+<p>Let’s do that drop in replacement:</p>
+<p><span class="math display">\[\sqrt{n}(\phi(T_n) - \phi(\theta)) = \sqrt{n}(\phi&#39;_\theta(T_n) - \phi&#39;_\theta(\theta)) = \phi&#39;_\theta(\sqrt{n}(T_n - \theta)) \rightsquigarrow \phi&#39;_\theta(T)\]</span></p>
+<p>Now we just need to make sure that our approximation is good.</p>
+</div>
+<div id="o-definition-of-the-derivative." class="section level1">
+<h1><span class="math inline">\(o\)</span>-definition of the derivative.</h1>
+<p>The definition of the derivative we’re using is</p>
+<p><span class="math display">\[R_\theta(h) = \phi(\theta + h) - \phi(\theta)- \phi&#39;_\theta(h) = o(h) \quad h \to 0  \]</span></p>
+<p>we then take <span class="math inline">\(h = T_n - \theta\)</span></p>
+<p><span class="math display">\[R = \phi(T_n) - \phi(\theta) - \phi&#39;_\theta(T_n - \theta) = o(T_n - \theta
+)\]</span></p>
+<p>That is our remainder converges to <span class="math inline">\(0\)</span> faster than <span class="math inline">\(||T_n - \theta||\)</span> converges to <span class="math inline">\(0\)</span>.</p>
+<p>We then multiply both sides by <span class="math inline">\(\sqrt{n}\)</span> and we have:</p>
+<p><span class="math display">\[\sqrt{n}(\phi(T_n) - \phi(\theta)) - \sqrt{n}\phi&#39;_\theta(T_n - \theta) = o(r_n(T_n - \theta)) = o(O(\sqrt{n}(T_n- \theta)) = o(O(1)) = o(1)\]</span></p>
+<p>By consistency we justify our use of the approximation?</p>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
