@@ -47,6 +47,10 @@ Let's do that drop in replacement:
 
 $$\sqrt{n}(\phi(T_n) - \phi(\theta)) = \sqrt{n}(\phi'_\theta(T_n) - \phi'_\theta(\theta)) = \phi'_\theta(\sqrt{n}(T_n - \theta)) \rightsquigarrow \phi'_\theta(T)$$
 
+* equality 1 is unjustified replacement we make
+* equality 2 by linearity
+* weak convergence by continuous mapping theorem
+
 Now we just need to make sure that our approximation is good.
 
 # $o$-definition of the derivative.
