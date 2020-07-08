@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.73.0" />
+
+
+<title>Confusion with stochastic o-notation in M-estimator consistency proof from van der Vaart - A blog by Stone</title>
+<meta property="og:title" content="Confusion with stochastic o-notation in M-estimator consistency proof from van der Vaart - A blog by Stone">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/%3cnil%3e"
+         width=""
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">Home</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Confusion with stochastic o-notation in M-estimator consistency proof from van der Vaart</h1>
+
+    
+    <span class="article-date">2020-07-08</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>From Asymptotic Statistics by A.W. van der Vaart pg 45-46.</p>
+<div id="theorem" class="section level1">
+<h1>Theorem</h1>
+<p>Let <span class="math inline">\(M_n\)</span> be random functions and let <span class="math inline">\(M\)</span> be a non-random function of <span class="math inline">\(\theta\)</span> such that</p>
+<p><span class="math display">\[\begin{gather}\sup_\theta |M_n(\theta) - M(\theta)| \to^p 0 \\ \sup_{\theta: d(\hat{\theta}_n, \theta)\geq \epsilon}\quad M(\theta) &lt; M(\theta_0) \end{gather}\]</span></p>
+<p>Then if a sequence of estimators <span class="math inline">\(\hat{\theta}_n\)</span> obeys</p>
+<p><span class="math display">\[M_n(\hat{\theta}_n) \geq M_n(\theta_0) - o_p(1)\]</span></p>
+<p>Then <span class="math inline">\(\hat{\theta}_n\)</span> is consistent for <span class="math inline">\(\theta_0\)</span>.</p>
+</div>
+<div id="what-i-was-confused-by" class="section level1">
+<h1>What I was confused by</h1>
+<p>In the proof the following step is made</p>
+<p><span class="math display">\[\begin{align}M_n(\hat{\theta}_n) &amp; \geq M_n(\theta_0) - o_p(1)\\ M_n(\hat{\theta}_n) &amp;\geq M(\theta_0)-o_p(1) \end{align}\]</span></p>
+<p>and this is justified by saying:</p>
+<blockquote>
+<p>Because uniform convergence of <span class="math inline">\(M_n\)</span> to <span class="math inline">\(M\)</span> implies convergence of <span class="math inline">\(M_n(\theta_0) \to^p M(\theta_0)\)</span>, the right side equals <span class="math inline">\(M(\theta_0) - o_P(1)\)</span>. It follows that <span class="math inline">\(M_n(\hat{\theta}_n) \geq M(\theta_0) - o_P(1)\)</span> […]</p>
+</blockquote>
+<p>I thought this was saying that you directly take the limit of just the <span class="math inline">\(M_n(\theta_0)\)</span> term and saying it converges to <span class="math inline">\(M(\theta_0)\)</span> which is a weird thing to think:</p>
+<ul>
+<li>you can’t take the limit of just one side</li>
+<li>even if you could, you can’t guarantee that <span class="math inline">\(M_n(\theta_0)\geq M_{n+1}(\theta_0) -o_P(1)\)</span> ASSUMING you have the same sequence of <span class="math inline">\(o_P(1)\)</span></li>
+</ul>
+<p>Instead I needed to realize that from a higher level, the <span class="math inline">\(o_P(1)\)</span> from <span class="math inline">\(M_n(\hat{\theta}_n) \geq M_n(\theta_0) - o_P(1)\)</span> and the <span class="math inline">\(o_P(1)\)</span> from <span class="math inline">\(M_n(\hat{\theta}_n) \geq M(\theta_0)-o_P(1)\)</span> are different sequences!</p>
+<p>One way to see this by <strong>noting what is and is not random anymore</strong>. Since <span class="math inline">\(M_n(\hat{\theta}_n)\)</span> is still the same term it’s still random. But <span class="math inline">\(M(\theta)\)</span> is fixed (by assumption). So the random-ness of <span class="math inline">\(M_n(\theta_0)\)</span> had to be absorbed by the <span class="math inline">\(O_P(1)\)</span> term.</p>
+<p>The second way would be to try to force the terms as needed:</p>
+<p><span class="math display">\[\begin{align}M_n(\hat{\theta}_n) &amp;\geq M_n(\theta_0) - O_P(1)\\ &amp; = M_n(\theta_0) - M(\theta_0) + M(\theta_0) - O_P(1)\end{align} \]</span></p>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
