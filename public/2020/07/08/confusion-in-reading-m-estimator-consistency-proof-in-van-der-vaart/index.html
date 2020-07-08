@@ -91,7 +91,8 @@
 <p>Instead I needed to realize that from a higher level, the <span class="math inline">\(o_P(1)\)</span> from <span class="math inline">\(M_n(\hat{\theta}_n) \geq M_n(\theta_0) - o_P(1)\)</span> and the <span class="math inline">\(o_P(1)\)</span> from <span class="math inline">\(M_n(\hat{\theta}_n) \geq M(\theta_0)-o_P(1)\)</span> are different sequences!</p>
 <p>One way to see this by <strong>noting what is and is not random anymore</strong>. Since <span class="math inline">\(M_n(\hat{\theta}_n)\)</span> is still the same term it’s still random. But <span class="math inline">\(M(\theta)\)</span> is fixed (by assumption). So the random-ness of <span class="math inline">\(M_n(\theta_0)\)</span> had to be absorbed by the <span class="math inline">\(O_P(1)\)</span> term.</p>
 <p>The second way would be to try to force the terms as needed:</p>
-<p><span class="math display">\[\begin{align}M_n(\hat{\theta}_n) &amp;\geq M_n(\theta_0) - O_P(1)\\ &amp; = M_n(\theta_0) - M(\theta_0) + M(\theta_0) - O_P(1)\end{align} \]</span></p>
+<p><span class="math display">\[\begin{align}M_n(\hat{\theta}_n) &amp;\geq M_n(\theta_0) - O_P(1)\\ &amp; = M_n(\theta_0) - M(\theta_0) + M(\theta_0) - o_P(1) \\ &amp; = o_P(1) + M(\theta_0) - o_P(1)\end{align} \]</span></p>
+<p>We can then absorbe the first <span class="math inline">\(o_P(1)\)</span> into the second.</p>
 </div>
 
     </div>
