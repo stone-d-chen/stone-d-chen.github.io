@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">1 min read</span>
+    <span class="article-duration">2 min read</span>
     
 
     <h1 class="article-title">A higher level examination of M-estimator consistency proof</h1>
@@ -76,6 +76,13 @@
 <p>I was originally imagining the first part of the proof using a full <span class="math inline">\(M(\cdot)\)</span> by <span class="math inline">\(\theta\)</span> graph but it might be easier to just imagine it as a straight line.</p>
 <p>We can also think of <span class="math inline">\(M(\theta_0)\)</span> as a distance from <span class="math inline">\(0\)</span> and similarly for <span class="math inline">\(M_n(\hat{\theta}_n)\)</span>. We’re then saying that <span class="math inline">\(M(\theta_0)\)</span>’s distance from <span class="math inline">\(0\)</span> is less than <span class="math inline">\(M_n(\hat{\theta}_n)\)</span>’s distance to <span class="math inline">\(0\)</span>. <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <p>Then we re-normalize as a distance from <span class="math inline">\(M(\hat{\theta}_n)\)</span> which we’re actually interested in<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> and say this distance is converging to <span class="math inline">\(0\)</span> <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+<p>So now we’ve established that the “<span class="math inline">\(y\)</span>” values have converged. What does this mean for our “<span class="math inline">\(x\)</span>” aka our <span class="math inline">\(\theta\)</span>’s?</p>
+</div>
+<div id="y-values-only-converge-when-the-thetas-do" class="section level1">
+<h1><span class="math inline">\(y\)</span>-values only converge when the <span class="math inline">\(\theta\)</span>’s do</h1>
+<p>By the well separated condition that</p>
+<p><span class="math display">\[\sup{\theta: d(\hat{\theta}_n, \theta)\geq \epsilon}\quad M(\theta) &lt; M(\theta_0)\]</span></p>
+<p>we have that only <span class="math inline">\(y\)</span> values that close to the max can only do so if the <span class="math inline">\(\theta_n\)</span>’s converge to <span class="math inline">\(\theta_0\)</span> the true max.</p>
 </div>
 <div class="footnotes">
 <hr />
