@@ -6,20 +6,10 @@
     <description>Recent content in math on A blog by Stone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>A higher level examination of M-estimator consistency proof</title>
-      <link>/2020/07/10/a-higher-level-examination-of-m-estimator-consistency-proof/</link>
-      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/10/a-higher-level-examination-of-m-estimator-consistency-proof/</guid>
-      <description>The proof of the [[Consistency of M-Estimators (uniform convergence)]] has two major parts:
-converging the “\(y\)” values: by squeezing \(M(\theta_0)\) in between \(M(\hat{\theta}_n)\) and \(M_n(\hat{\theta}_n)\)“\(y\)” values only get close near \(\theta_0\): well separated says that the only place where \(M\) is nearConverging the \(y\) valuesI was originally imagining the first part of the proof using a full \(M(\cdot)\) by \(\theta\) graph but it might be easier to just imagine it as a straight line.</description>
-    </item>
     
     <item>
       <title>Walking through the delta method</title>
