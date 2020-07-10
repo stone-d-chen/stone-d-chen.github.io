@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.73.0" />
+
+
+<title>A higher level examination of M-estimator consistency proof - A blog by Stone</title>
+<meta property="og:title" content="A higher level examination of M-estimator consistency proof - A blog by Stone">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/%3cnil%3e"
+         width=""
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">Home</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">A higher level examination of M-estimator consistency proof</h1>
+
+    
+    <span class="article-date">2020-07-10</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>The proof of the [[Consistency of M-Estimators (uniform convergence)]] has two major parts:</p>
+<ul>
+<li>converging the “<span class="math inline">\(y\)</span>” values: by squeezing <span class="math inline">\(M(\theta_0)\)</span> in between <span class="math inline">\(M(\hat{\theta}_n)\)</span> and <span class="math inline">\(M_n(\hat{\theta}_n)\)</span></li>
+<li>“<span class="math inline">\(y\)</span>” values only get close near <span class="math inline">\(\theta_0\)</span>: well separated says that the only place where <span class="math inline">\(M\)</span> is near</li>
+</ul>
+<div id="converging-the-y-values" class="section level1">
+<h1>Converging the <span class="math inline">\(y\)</span> values</h1>
+<p>I was originally imagining the first part of the proof using a full <span class="math inline">\(M(\cdot)\)</span> by <span class="math inline">\(\theta\)</span> graph but it might be easier to just imagine it as a straight line.</p>
+<p>We can also think of <span class="math inline">\(M(\theta_0)\)</span> as a distance from <span class="math inline">\(0\)</span> and similarly for <span class="math inline">\(M_n(\hat{\theta}_n)\)</span>. We’re then saying that <span class="math inline">\(M(\theta_0)\)</span>’s distance from <span class="math inline">\(0\)</span> is less than <span class="math inline">\(M_n(\hat{\theta}_n)\)</span>’s distance to <span class="math inline">\(0\)</span>. <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Then we re-normalize as a distance from <span class="math inline">\(M(\hat{\theta}_n)\)</span> which we’re actually interested in<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> and say this distance is converging to <span class="math inline">\(0\)</span> <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>with <span class="math inline">\(o_P(1)\)</span> amount of space as needed<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>but also fluctuating since it’s random<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>it’s a distance because <span class="math inline">\(M(\theta_0)\)</span> is defined as as the max, so the lhs is always positive<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

@@ -6,24 +6,19 @@
     <description>Recent content in math on A blog by Stone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Confusion with stochastic o-notation in M-estimator consistency proof from van der Vaart</title>
-      <link>/2020/07/08/confusion-in-reading-m-estimator-consistency-proof-in-van-der-vaart/</link>
-      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      <title>A higher level examination of M-estimator consistency proof</title>
+      <link>/2020/07/10/a-higher-level-examination-of-m-estimator-consistency-proof/</link>
+      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/07/08/confusion-in-reading-m-estimator-consistency-proof-in-van-der-vaart/</guid>
-      <description>From Asymptotic Statistics by A.W. van der Vaart pg 45-46.
-TheoremLet \(M_n\) be random functions and let \(M\) be a non-random function of \(\theta\) such that
-\[\begin{gather}\sup_\theta |M_n(\theta) - M(\theta)| \to^p 0 \\ \sup_{\theta: d(\hat{\theta}_n, \theta)\geq \epsilon}\quad M(\theta) &amp;lt; M(\theta_0) \end{gather}\]
-Then if a sequence of estimators \(\hat{\theta}_n\) obeys
-\[M_n(\hat{\theta}_n) \geq M_n(\theta_0) - o_p(1)\]
-Then \(\hat{\theta}_n\) is consistent for \(\theta_0\).
-What I was confused byIn the proof the following step is made</description>
+      <guid>/2020/07/10/a-higher-level-examination-of-m-estimator-consistency-proof/</guid>
+      <description>The proof of the [[Consistency of M-Estimators (uniform convergence)]] has two major parts:
+converging the “\(y\)” values: by squeezing \(M(\theta_0)\) in between \(M(\hat{\theta}_n)\) and \(M_n(\hat{\theta}_n)\)“\(y\)” values only get close near \(\theta_0\): well separated says that the only place where \(M\) is nearConverging the \(y\) valuesI was originally imagining the first part of the proof using a full \(M(\cdot)\) by \(\theta\) graph but it might be easier to just imagine it as a straight line.</description>
     </item>
     
     <item>
