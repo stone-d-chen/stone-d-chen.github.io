@@ -6,10 +6,20 @@
     <description>Recent content in Posts on A blog by Stone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WIP: Design-based vs Model-based framework</title>
+      <link>/2020/07/20/wip-design-based-vs-model-based-framework/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/20/wip-design-based-vs-model-based-framework/</guid>
+      <description>The postulate of randomness thus resolves itself into the question, “Of what population is this a random sample?” which must frequently be asked by every practical statistician. (Fisher 1922)
+In Fisher’s model-based framework, you begin with a hypothetical infinite population that represents all possible \(y\)’s and assume that your data set is a simple random sample (SRS) from this infinite population. If your data set is NOT a SRS from your hypothetical population, then your hypothetical population is incorrect.</description>
+    </item>
     
     <item>
       <title>A higher level examination of M-estimator consistency proof</title>
