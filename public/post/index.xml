@@ -6,10 +6,22 @@
     <description>Recent content in Posts on A blog by Stone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Model-assisted frameworks: a hybrid between design-based and model-based frameworks</title>
+      <link>/2020/07/21/model-assisted-frameworks-a-hybrid-between-design-based-and-model-based-frameworks/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/21/model-assisted-frameworks-a-hybrid-between-design-based-and-model-based-frameworks/</guid>
+      <description>To overcome the limitations of both the pure model-based and pure design-based frameworks, a hybrid model-assisted framework has been developed. In this framework a statistical model is specified to determine the parameters of interest but estimation and inference of said parameters is done under a design-based framework.
+For example consider a model fit on the finite population of size \(N\) as
+\[y_i = \beta_0 + \beta_1x_i\]
+then the finite population quantity of interest are \(\beta_0\) and \(\beta_1\) values that minimizes that squared error:</description>
+    </item>
     
     <item>
       <title>Design-based vs Model-based framework</title>
