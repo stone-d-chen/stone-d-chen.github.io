@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">3 min read</span>
     
 
     <h1 class="article-title">Design-based vs Model-based framework</h1>
@@ -71,7 +71,12 @@
 </blockquote>
 <p>When we say our sample set is a sample from a population, what population are we talking about?</p>
 <p>In Fisher’s model-based framework, you begin with specifying a statistical model which specifies a data generating process for your <span class="math inline">\(y_i\)</span>’s. Now imagine we generate and store <span class="math inline">\(y_i\)</span>’s ad infinitum. The resulting data set forms our hypothetical infinite population and our sample is considered a simple random sample (SRS) from this infinite population. If your sample is not a SRS, then your statistical model specifying the infinite population is incorrect. Note, the model-based framework does not require an actual random sample; it only requires that the distributional assumptions of the infinite population (and thus the statistical model) match that of the sample.</p>
-<p>In contrast, Neyman’s design-based framework begins with specifying a finite population and not a statistical model (and thus no hypothetical infinite population). In the design-based framework the targets of inference is not the statistical model, but the parameters of the fixed, finite population e.g. the average age of all New Zealand residents. Then the sample <span class="math inline">\(\{y_i\}\)</span> is not assumed to be intrinsically random like in the model-based framework; instead the randomness of the <span class="math inline">\(\{y_i\}\)</span>’s are inherited from the randomness of how each individual is sampled.</p>
+<p>In contrast, Neyman’s design-based framework begins with specifying a finite population and not a statistical model (and thus no hypothetical infinite population). In the design-based framework the targets of inference is not the statistical model, but the parameters of the fixed, finite population e.g. the average age of all New Zealand residents. Then the sample <span class="math inline">\(\{y_i\}\)</span> is not assumed to be intrinsically random like in the model-based framework; instead the randomness of the <span class="math inline">\(\{y_i\}\)</span>’s are inherited from the randomness of how each individual is sampled. Note, in the design-based framework requires a random sample but not a SIMPLE random sample; that’s required is knowing each <span class="math inline">\(\pi_i\)</span>.</p>
+<div id="adjusting-for-complex-sampling-schemes" class="section level2">
+<h2>Adjusting for complex sampling schemes</h2>
+<p>The practicalities of collecting data often requires complex sampling schemes: stratified sampling, cluster sampling, multi-stage sampling etc. The design-based framework allows for conceptually straightforward way to take this into account by calculating <span class="math inline">\(\pi_i\)</span> for each individual according to the sampling scheme. However a pure design-based framework only allows for estimation of quantities like means, totals and ratios. There are very good scientific reasons for wanting to use a statistical model.</p>
+<p>One way of getting around this limitation is by using pure model-based framework and the conditioning on all sampling variables (e.g. stratification, clusters, etc.) and allowing for interactions. However adjusting the model under the conditionality princple both complicates the model interpretation and may require many additional degrees of freedom.</p>
+</div>
 <div id="model-based-vs-design-based" class="section level1">
 <h1>Model-based vs Design Based</h1>
 <div id="model-based" class="section level2">
