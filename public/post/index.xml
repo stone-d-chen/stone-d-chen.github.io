@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on A blog by Stone</title>
+    <title>Posts on Is this Math?</title>
     <link>/post/</link>
-    <description>Recent content in Posts on A blog by Stone</description>
+    <description>Recent content in Posts on Is this Math?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Axiomatically, the frequentist likelihood is invariant under parameter transformation</title>
+      <link>/2020/07/27/axiomatically-the-frequentist-likelihood-is-invariant-under-parameter-transformation/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/27/axiomatically-the-frequentist-likelihood-is-invariant-under-parameter-transformation/</guid>
+      <description>Axiomatically, the frequentist likelihood is invariant under parameter transformationThat our inference be invariant under 1-1 data transformation seems like a natural requirement and follows from the definition of the likelihood. That is if we transform the data, we transform the pdf and thus have a new likelihood.
+It seems reasonable to require that the likelihood ratio be invariant under fixed parameter transformation as well: regardless if I estimate \(\sigma^2\) or \(\sigma\) I should have the same amount of information.</description>
+    </item>
     
     <item>
       <title>Transforming the data of a likelihood involves a Jacobian; why the likelihood ratio is the key object</title>
