@@ -6,10 +6,21 @@
     <description>Recent content in Posts on A blog by Stone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Transforming the data of a likelihood involves a Jacobian; why the likelihood ratio is the key object</title>
+      <link>/2020/07/27/transforming-the-data-of-a-likelihood-involves-a-jacobian/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/07/27/transforming-the-data-of-a-likelihood-involves-a-jacobian/</guid>
+      <description>The likelihood ratio is the primary object of interest because if we transform the data \(X\) to \(Y\), our information about a fixed parameter \(\theta\) should not change. This mathematically follows from calculus.
+Transforming the data (random variable) of a likelihood involves a Jacobian term\[L(\theta; y) = L(\theta; x)\left| \frac{\partial x}{\partial y}\right|\]
+The [[Classical definition of the likelihood]] starts with a statistical model and thus a probability density \(p_\theta(x)\).</description>
+    </item>
     
     <item>
       <title>Model-assisted frameworks: a hybrid between design-based and model-based frameworks</title>

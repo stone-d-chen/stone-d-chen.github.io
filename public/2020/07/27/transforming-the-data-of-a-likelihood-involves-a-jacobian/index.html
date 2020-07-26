@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.73.0" />
+
+
+<title>Transforming the data of a likelihood involves a Jacobian; why the likelihood ratio is the key object - A blog by Stone</title>
+<meta property="og:title" content="Transforming the data of a likelihood involves a Jacobian; why the likelihood ratio is the key object - A blog by Stone">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/%3cnil%3e"
+         width=""
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">Home</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Transforming the data of a likelihood involves a Jacobian; why the likelihood ratio is the key object</h1>
+
+    
+    <span class="article-date">2020-07-27</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>The likelihood ratio is the primary object of interest because if we transform the data <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span>, our information about a fixed parameter <span class="math inline">\(\theta\)</span> should not change. This mathematically follows from calculus.</p>
+<div id="transforming-the-data-random-variable-of-a-likelihood-involves-a-jacobian-term" class="section level1">
+<h1>Transforming the data (random variable) of a likelihood involves a Jacobian term</h1>
+<blockquote>
+<p><span class="math display">\[L(\theta; y) = L(\theta; x)\left| \frac{\partial x}{\partial y}\right|\]</span></p>
+</blockquote>
+<p>The [[Classical definition of the likelihood]] starts with a statistical model and thus a probability density <span class="math inline">\(p_\theta(x)\)</span>.</p>
+<p>Now assume we perform some 1-1 transformation of <span class="math inline">\(X\)</span> to <span class="math inline">\(Y\)</span>. Then</p>
+<p><span class="math display">\[p_\theta(y) = p_\theta(x(y))*\left| \frac{\partial x}{\partial y}\right|\]</span></p>
+<p>because the definition of the probability density involves an integral: <span class="math inline">\(P(y(a) \leq Y \leq y(b)) = \int_{y(a)}^{y(b)} p_\theta(y)dy\)</span>.</p>
+<p>Thus we can directly say that the likelihoods are</p>
+<p><span class="math display">\[L(\theta; y) = L(\theta; x)\left| \frac{\partial x}{\partial y}\right|\]</span></p>
+</div>
+<div id="why-the-likelihood-ratio-is-the-key-object" class="section level1">
+<h1>Why the likelihood ratio is the key object</h1>
+<p>We’ve stated <em>intuitively</em> that transforming the data <span class="math inline">\(x\)</span> to <span class="math inline">\(y\)</span> in a 1-1 manner should not change the information contained in the likelihood. Mathematically we have that transforming the data requires multiplication by the Jacobian.</p>
+<p>Then to preserve the intuitive idea, we should examine only the likelihood ratios,</p>
+<p><span class="math display">\[\frac{L(\theta_2; y)}{L(\theta_1; y)} = \frac{L(\theta_2; x)}{L(\theta_1; x)},\]</span></p>
+<p>because regardless of what transformation the data is in, the inference between <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span> are the same.</p>
+<p>Because of this we say that <strong>proportional likelihoods carry the same information</strong>. That is <span class="math inline">\(L(\theta, x)\)</span> carries the same information (better to think about this as <em>shape</em>) that <span class="math inline">\(c*L(\theta,x)\)</span>. As such we typically normalize the curve shape so the value at the max is <span class="math inline">\(1\)</span>.</p>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
