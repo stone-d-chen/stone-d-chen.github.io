@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.73.0" />
+
+
+<title>Some notation for extended likelihoods - Is this Math?</title>
+<meta property="og:title" content="Some notation for extended likelihoods - Is this Math?">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/%3cnil%3e"
+         width=""
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">Home</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Some notation for extended likelihoods</h1>
+
+    
+    <span class="article-date">2020-08-03</span>
+    
+
+    <div class="article-content">
+      
+
+
+<div id="some-notation-of-extended-likelihoods" class="section level1">
+<h1>Some notation of extended likelihoods</h1>
+<p>In classical likelihood theory we have this “duality” between the data-generating view and the likelihood view:</p>
+<ul>
+<li><span class="math inline">\(f_\theta(y)\)</span> gives the probability of generating a <span class="math inline">\(y\)</span> for fixed <span class="math inline">\(\theta\)</span></li>
+<li><span class="math inline">\(L_y(\theta)\)</span> gives the likelihood of <span class="math inline">\(\theta\)</span> for fixed <span class="math inline">\(y\)</span></li>
+</ul>
+<p>We can extend this analogy to the extended likelihood which incorporates random effects. This duality gives a Bayesian-esque flavor (mathematically, not philosophically).</p>
+<p>Characters:</p>
+<ul>
+<li><span class="math inline">\(\theta\)</span> – fixed parameters</li>
+<li><span class="math inline">\(v\)</span> – random parameters</li>
+<li><span class="math inline">\(f(\cdot)\)</span> – assorted set probability distributions</li>
+</ul>
+</div>
+<div id="data-generation" class="section level1">
+<h1>Data Generation:</h1>
+<div id="random" class="section level2">
+<h2>Random:</h2>
+<p><span class="math display">\[f_\theta(v)\]</span></p>
+<p>For a fixed <span class="math inline">\(\theta\)</span> we generate our random effect <span class="math inline">\(v\)</span>.</p>
+</div>
+<div id="conditional" class="section level2">
+<h2>Conditional:</h2>
+<p><span class="math display">\[f_\theta(y|v)\]</span></p>
+<p>Conditional on our random effects <span class="math inline">\(v\)</span> we generate our random <span class="math inline">\(y\)</span>’s. Note that these are different pdfs from above and are different for different <span class="math inline">\(y\)</span>’s.</p>
+</div>
+<div id="joint" class="section level2">
+<h2>Joint</h2>
+<p><span class="math display">\[f_\theta(v)f_\theta(y|v) = f_\theta(v,y)\]</span></p>
+<p>Our joint pdf is the product of the above.</p>
+</div>
+<div id="constructing-the-joint-likelihood" class="section level2">
+<h2>Constructing the joint likelihood</h2>
+<p>To construct the joint likelihood we define</p>
+<ul>
+<li><span class="math inline">\(L(\theta; v) \equiv f_\theta(v)\)</span></li>
+<li><span class="math inline">\(L(\theta, v; y|v) \equiv f_\theta(y|v)\)</span></li>
+</ul>
+<p>So then our joint likelihood is</p>
+<p><span class="math display">\[L(\theta,v; v,y) \equiv L(\theta,v)L(\theta,v; y|v)\]</span></p>
+</div>
+</div>
+<div id="performing-inference" class="section level1">
+<h1>Performing inference</h1>
+<p>We, in general cannot perform inference on the joint likelihood; [[Estimating fixed effects in mixed (random) effects models relies on the marginal likelihood of y]].</p>
+<p>We instead need to factor the likelihood</p>
+<p><span class="math display">\[L(\theta,v; v,y) \equiv L(\theta,y)L(\theta,v; v|y)\]</span></p>
+<p>We should ONLY do inference on <span class="math inline">\(\theta\)</span> via <span class="math inline">\(L(\theta;y)\)</span></p>
+<div id="marginal-of-y" class="section level3">
+<h3>Marginal of <span class="math inline">\(y\)</span></h3>
+<p><span class="math display">\[L(\theta;y) \equiv f_\theta(y)\]</span></p>
+</div>
+<div id="conditional-on-y" class="section level3">
+<h3>Conditional on <span class="math inline">\(y\)</span></h3>
+<p><span class="math display">\[L(\theta,v;v|y) \equiv f_\theta(v|y)\]</span></p>
+</div>
+<div id="joint-1" class="section level3">
+<h3>Joint</h3>
+<p><span class="math display">\[\begin{align}\textbf{Inference} &amp;  \quad \textbf{Joint} &amp; \quad \textbf{Data generation}\\f_\theta(y)f_\theta(v|y) &amp; = f_\theta(v,y) &amp;  = f_\theta(v)f_\theta(y|v) \\ L(\theta;y)L(\theta,v;v|y) &amp; = L(\theta,v;v,y) &amp; = L(\theta;v)L(\theta,v;y|v) \end{align}\]</span></p>
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
