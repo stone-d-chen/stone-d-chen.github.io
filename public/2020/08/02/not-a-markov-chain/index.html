@@ -76,7 +76,8 @@
 <p>That is the probability of what happens in the next step only depends on the previous step. Or put another way, there’s no additional information in <span class="math inline">\((X_{n-1}, \dots, X_0)\)</span> so “knowing”/conditioning on it does not change the probability of <span class="math inline">\(P(X_{n+1}|X_n)\)</span>.</p>
 <p>How do we show something is NOT a Markov chain? We can show that the defining Markov definition doesn’t hold, that is AT LEAST ONE sequence <span class="math inline">\((X_n,\dots,X_0)\)</span> such that</p>
 <p><span class="math display">\[P(X_{n+1}|X_n, \dots, X_0) \neq P(X_{n+1}|X_n)\]</span></p>
-<p>We could show this by directly computing <span class="math inline">\(P(X_{n+1}|X_n)\)</span> and showing that it’s different for some sequence <span class="math inline">\((X_n,\dots,X_0)\)</span>. Alternatively we can pick two different sequences <span class="math inline">\((X_n, \dots,X_0)\)</span> and show that they’re different and that’s the approach we’ll take.</p>
+<p>We could show this by directly computing <span class="math inline">\(P(X_{n+1}|X_n)\)</span> and showing that it’s different for some sequence <span class="math inline">\((X_n,\dots,X_0)\)</span>.</p>
+<p>Alternatively we can pick two different sequences <span class="math inline">\((X_n, \dots,X_0)\)</span> and show <span class="math inline">\(P(X_{n+1}|\dots)\)</span> gives different probabilities. and that’s the approach we’ll take.</p>
 </div>
 <div id="the-set-up" class="section level1">
 <h1>The set-up</h1>
