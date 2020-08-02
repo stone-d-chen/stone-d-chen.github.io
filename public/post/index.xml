@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Is this Math?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A not markov chain exmaple</title>
+      <link>/2020/08/02/not-a-markov-chain/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/08/02/not-a-markov-chain/</guid>
+      <description>Showing a stochastic process is not a Markov chain by exampleThe definition of a Markov chain states that a sequence \((X_n)\) is a MC if the following holds:
+\[P(X_{n+1}|X_n, \dots X_0) = P(X_{n+1}|X_n)\]
+for all \(x\) values 1That is the probability of what happens in the next step only depends on the previous step. Or put another way, there’s no additional information in \((X_{n-1}, \dots, X_0)\) so “knowing”/conditioning on it does not change the probability of \(P(X_{n+1}|X_n)\).</description>
+    </item>
     
     <item>
       <title>Axiomatically, the frequentist likelihood is invariant under parameter transformation</title>
