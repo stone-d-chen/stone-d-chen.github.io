@@ -20,7 +20,7 @@
       <description>Some notation of extended likelihoodsIn classical likelihood theory we have this “duality” between the data-generating view and the likelihood view:
 \(f_\theta(y)\) gives the probability of generating a \(y\) for fixed \(\theta\)\(L_y(\theta)\) gives the likelihood of \(\theta\) for fixed \(y\)We can extend this analogy to the extended likelihood which incorporates random effects. This duality gives a Bayesian-esque flavor (mathematically, not philosophically).
 Characters:
-\(\theta\) – fixed parameters\(v\) – random parameters\(f(\cdot)\) – assorted set probability distributionsData Generation:Random:\[f_\theta(v)\]</description>
+\(\theta\) – fixed parameters\(v\) – random parameters\(f(\cdot)\) – assorted set of probability distributionsData Generation:Random:\[f_\theta(v)\]</description>
     </item>
     
     <item>
