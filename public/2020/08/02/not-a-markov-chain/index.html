@@ -85,8 +85,10 @@
 <p>So to show that the sequence is NOT a Markov chain, we will construct a situation where knowing <span class="math inline">\((X_{n-1}, \dots, X_n)\)</span> does change the probability. We will consider the sequences all <span class="math inline">\(8\)</span>’s and all <span class="math inline">\(4\)</span>’s because this gives us complete information about what the actual coin flips are.</p>
 <div id="x_n-6-the-rest-are-8s" class="section level2">
 <h2><span class="math inline">\(X_n = 6\)</span>, the rest are <span class="math inline">\(8\)</span>’s</h2>
-<p>Consider the sequence:
-* all <span class="math inline">\(8\)</span>’s: <span class="math inline">\(( X_{n-1} = 8, \dots, X_0 = 8)\)</span></p>
+<p>Consider the sequence:</p>
+<ul>
+<li>all <span class="math inline">\(8\)</span>’s: <span class="math inline">\(( X_{n-1} = 8, \dots, X_0 = 8)\)</span></li>
+</ul>
 <p>Then fix <span class="math inline">\(X_n = 6\)</span>. This means that <span class="math inline">\(Q_n = 2, Q_{n-1}=4\)</span> (because we know <span class="math inline">\(X_{n-1}, \dots, X_n\)</span> we can fully determine <span class="math inline">\(Q_n\)</span>).</p>
 <p>Then <span class="math inline">\(P(X_{n+1}|X_n = 6, X_{n-1} = 8, \dots, X_0 = 8)\)</span> has distribution:</p>
 <p><span class="math display">\[P(X_{n+1}=4|\dots) = P(Q_{n+1}=2) = 1/4 \]</span>
