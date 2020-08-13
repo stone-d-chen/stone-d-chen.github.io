@@ -53,7 +53,7 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">3 min read</span>
     
 
     <h1 class="article-title">Setting up WSL2 with R and Visual Studio Code</h1>
@@ -69,15 +69,12 @@
 <p>This is mostly to document the resources I used to set up the Windows Subsystem for Linux 2 (WSL/2) for a local installation of R on Linux as well as setting up allowing Visual Studio Code (vscode) to remote into a machine with R installed and get nice features such as linting and intellisense.</p>
 <div id="setting-up-wsl2-and-windows-terminal" class="section level1">
 <h1>Setting up WSL2 and Windows Terminal</h1>
-<div id="wsl2" class="section level2">
-<h2>WSL2</h2>
+<p><strong>WSL2</strong></p>
 <p>How I did this will probably be outdated so I’ll link to the docs instead:</p>
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux Installation Guide for Windows 10</a></li>
 </ul>
-</div>
-<div id="windows-terminal" class="section level2">
-<h2>Windows Terminal</h2>
+<p><strong>Windows Terminal</strong></p>
 <p>Windows Terminal is a much nicer terminal to use than the default. You can install it from the Windows Store.</p>
 <ul>
 <li><p><a href="https://github.com/microsoft/terminal">Github for Windows Terminal</a></p></li>
@@ -94,29 +91,32 @@
 </ul>
 <p>You can find additional themes <a href="https://atomcorp.github.io/themes/">here</a>.</p>
 </div>
-</div>
 <div id="installing-r-on-wsl2" class="section level1">
 <h1>Installing R on WSL2</h1>
-<p>Follow the instructions here:</p>
+<p>The R linux page has instructions for adding the repositories needed to install <code>r-base</code>. Follow the instructions here:</p>
 <ul>
 <li><a href="https://cran.r-project.org/bin/linux/ubuntu/">UBUNTU PACKAGES FOR R</a></li>
 </ul>
 <p>Some things that might be helpful for the above process:</p>
 <ul>
 <li><p><a href="https://phpsolved.com/gpg-cant-connect-to-the-agent-ipc-connect-call-failed/">gpg can’t connect</a></p></li>
-<li><p><a href="https://phpsolved.com/gpg-cant-connect-to-the-agent-ipc-connect-call-failed/">add line to sources</a></p></li>
+<li><p><a href="https://phpsolved.com/gpg-cant-connect-to-the-agent-ipc-connect-call-failed/">add line to sources</a></p>
+<ul>
+<li><p><code>echo "new line of text" | sudo tee -a /etc/apt/sources.list</code></p></li>
+<li><p>or using <code>sudo vim</code></p></li>
+</ul></li>
 </ul>
-<p><code>echo "new line of text" | sudo tee -a /etc/apt/sources.list</code></p>
-<p>or using <code>sudo vim</code></p>
 </div>
 <div id="using-r-via-visual-studio-code-or-rstudio-server" class="section level1">
 <h1>Using R via Visual Studio Code or Rstudio server</h1>
-<p>Rstudio server is pretty straightforward just follow the instructions to install and then access via webbrowser.</p>
+<p>Two of the more pleasant ways of using R are through Visual Studio Code or install RStudio Server.</p>
+<p><strong>RStudio Server</strong></p>
+<p>RStudio server will allow you to locally host a RStudio server on WSL and then access it via a webbrowser. You get the full RStudio experience.</p>
 <ul>
 <li><a href="https://support.rstudio.com/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2">Rstudio server</a></li>
 </ul>
 <p><strong>Visual Studio Code</strong></p>
-<p>The easiest way to do this is to to just launch vscode from WSL2 using <code>code .</code> to open the current directory.</p>
+<p>The benefits of Visual Studio Code are the easy interop between WSL2 as well as all the extensions. It’s been very easy to access remote R virtual machines and execute code in an poor man’s RStudio way. The easiest way to install is to to just launch vscode from WSL2 using <code>code .</code> to open the current directory. It will the automatically ask to install WSL remote access.</p>
 <p>Then you want to install extensions</p>
 <ul>
 <li><p><a href="https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.r">Some R help</a></p></li>
@@ -128,8 +128,9 @@
 <h1>Remote R via SSH</h1>
 <p>We can directly SSH into remote server using this vscode extension</p>
 <p><a href="https://code.visualstudio.com/docs/remote/ssh-tutorial">Remote development over SSH</a></p>
-<p>Using the R extension previously installed we can open an <code>R: Create R terminal</code> from the command pallete.</p>
+<p>Using the R extension previously installed we can open an <code>R: Create R terminal</code> from the command palette.</p>
 <p>Then <code>ctrl+enter</code> will automatically send R code in the editor to the R session.</p>
+<p>To get R language support you’ll need to install the extensions above remotely and point them to the correct locations on the virtual machine.</p>
 </div>
 
     </div>
