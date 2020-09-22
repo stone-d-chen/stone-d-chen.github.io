@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.73.0" />
+
+
+<title>Tangent vectors as derivations - Is this Math?</title>
+<meta property="og:title" content="Tangent vectors as derivations - Is this Math?">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/%3cnil%3e"
+         width=""
+         height=""
+         alt="">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/">Home</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Tangent vectors as derivations</h1>
+
+    
+    <span class="article-date">2020-09-22</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p><span class="math display">\[\require{physics}\]</span></p>
+<div id="notes-on-an-introduction-to-manifolds-by-tu" class="section level1">
+<h1>Notes on an Introduction to Manifolds (by Tu)</h1>
+<p>Some extremely wordy notes based on <em>An Introduction to Manifolds</em> by Loring W. Tu, mainly to clarify some basis things to myself.</p>
+<p>A key concept is <em>coordinate-free</em> objects. In this case, how do we define tangent vectors in a coordinate free way? (But also why do we even care?)</p>
+<div id="tangent-vectors-in-mathbbrn-as-derivations" class="section level2">
+<h2>Tangent vectors in <span class="math inline">\(\mathbb{R}^n\)</span> as Derivations</h2>
+<p>The book starts with defining tangent vectors to a curve (in <span class="math inline">\(\mathbb{R}^3\)</span>) at point <span class="math inline">\(p\)</span>. We can define a tangent vector to a curve as a vector that lives in the tangent plane to the curve (at point <span class="math inline">\(p\)</span>). And the tangent plane is the limit of secant planes. And secant planes are determined by <span class="math inline">\(3\)</span> points on the curve.</p>
+<p>This is a bit annoying since this definition relies on defining the tangent vector in terms of Euclidean space but we would like to use a definition that applies to general manifolds?</p>
+<p>How do we deal with this? Generally in mathematics we can handle this via Characterizing the tangent vectors. This vaguely means we will say what properties tangent vectors have and then we just re-define tangent vectors as things having those properties.</p>
+<p>We do this by characterizing tangent vectors as [<a href="#directional-derivative">Directional derivative</a>]s and then more generally as something known as a derivation. Derivations are then coordinate-free.</p>
+</div>
+<div id="the-tangent-space-to-a-manifold" class="section level2">
+<h2>The tangent space to a manifold</h2>
+<p>We start with the definition of the tangent space (at point <span class="math inline">\(p\)</span>) to <span class="math inline">\(\mathbb{R}^n\)</span></p>
+<p><span class="math display">\[T_p(\mathbb{R}^n)\]</span></p>
+<p>which we can think of as all the vectors that are tangent to <span class="math inline">\(\mathbb{R}^n\)</span> at the point <span class="math inline">\(p\)</span>. This space ends up just being <span class="math inline">\(\mathbb{R}^n\)</span> <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> and we’ll call a vector in this space <span class="math inline">\(v = \sum v^ie_i = v^ie_i\)</span>.</p>
+</div>
+<div id="directional-derivative" class="section level2">
+<h2>Directional derivative</h2>
+<p>Suppose we have have <span class="math inline">\(f\)</span> in <span class="math inline">\(\mathbb{R}^n\)</span> that is <span class="math inline">\(C^\infty\)</span> in the neighborhood of <span class="math inline">\(p\)</span>. Then the directional derivative of <span class="math inline">\(f\)</span> in the direction of <span class="math inline">\(v\)</span> at <span class="math inline">\(p\)</span> (that is <span class="math inline">\(v\)</span> is defined at <span class="math inline">\(p\)</span>) is</p>
+<p><span class="math display">\[D_vf = \lim_{t \to 0} \frac{f(c(t))-f(p)}{t} = \dv{t}\eval{}_{t=0}f(c(t)).\]</span></p>
+<p>Then by chain rule</p>
+<p><span class="math display">\[D_vf = \dv{c^i}{t}(0)\pdv{f}{x^i}(p) = v^i\pdv{f}{x^i}(p)\]</span></p>
+<p>We can then define <span class="math inline">\(D_v\)</span> as</p>
+<p><span class="math display">\[D_v = v^i\pdv{x^i}\eval{}_p\]</span></p>
+<p>or in other words the space of continuously differential functions <span class="math inline">\(f\)</span> at <span class="math inline">\(p\)</span> to <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p><span class="math display">\[D_v: C^\infty_p \to \mathbb{R}\]</span></p>
+<p>and associate</p>
+<p><span class="math display">\[v\mapsto D_v.\]</span></p>
+<p>It’s this associate between tangent vectors <span class="math inline">\(v\)</span> and the directional derivative <span class="math inline">\(D_v\)</span> that provides an avenue for characterizing tangent vectors.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>I’m pretty sure all tangent spaces are some <span class="math inline">\(\mathbb{R}^n\)</span><a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    
+  </body>
+</html>
+
