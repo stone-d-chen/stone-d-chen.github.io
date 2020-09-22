@@ -17,8 +17,7 @@
       <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/09/22/tangent-vectors-as-derivations-manifolds-by-tu/</guid>
-      <description>(\require{physics})
-Notes on an Introduction to Manifolds (by Tu) Some extremely wordy notes based on An Introduction to Manifolds by Loring W. Tu, mainly to clarify some basis things to myself.
+      <description>Notes on an Introduction to Manifolds (by Tu) Some extremely wordy notes based on An Introduction to Manifolds by Loring W. Tu, mainly to clarify some basis things to myself.
 A key concept is coordinate-free objects. In this case, how do we define tangent vectors in a coordinate free way? (But also why do we even care?)
 Tangent vectors in $\mathbb{R}$ as Derivations The book starts with defining tangent vectors to a curve (in $\mathbb{R}^3$) at point $p$.</description>
     </item>
