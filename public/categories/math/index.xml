@@ -6,44 +6,7 @@
     <description>Recent content in math on Is this Math?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Tangent vectors as derivations</title>
-      <link>/2020/09/22/tangent-vectors-as-derivations/</link>
-      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/09/22/tangent-vectors-as-derivations/</guid>
-      <description>\[\require{physics}\]
-Notes on an Introduction to Manifolds (by Tu)Some extremely wordy notes based on An Introduction to Manifolds by Loring W. Tu, mainly to clarify some basis things to myself.
-A key concept is coordinate-free objects. In this case, how do we define tangent vectors in a coordinate free way? (But also why do we even care?)
-Tangent vectors in \(\mathbb{R}^n\) as DerivationsThe book starts with defining tangent vectors to a curve (in \(\mathbb{R}^3\)) at point \(p\).</description>
-    </item>
-    
-    <item>
-      <title>A not markov chain example</title>
-      <link>/2020/08/02/not-a-markov-chain/</link>
-      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/08/02/not-a-markov-chain/</guid>
-      <description>Showing a stochastic process is not a Markov chain by exampleThe definition of a Markov chain states that a sequence \((X_n)\) is a MC if the following holds:
-\[P(X_{n+1}|X_n, \dots X_0) = P(X_{n+1}|X_n)\]
-for all \(x\) values 1That is the probability of what happens in the next step only depends on the previous step. Or put another way, there’s no additional information in \((X_{n-1}, \dots, X_0)\) so “knowing”/conditioning on it does not change the probability of \(P(X_{n+1}|X_n)\).</description>
-    </item>
-    
-    <item>
-      <title>A higher level examination of M-estimator consistency proof</title>
-      <link>/2020/07/10/a-higher-level-examination-of-m-estimator-consistency-proof/</link>
-      <pubDate>Fri, 10 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/10/a-higher-level-examination-of-m-estimator-consistency-proof/</guid>
-      <description>The proof of the [[Consistency of M-Estimators (uniform convergence)]] has two major parts:
-converging the “\(y\)” values: by squeezing \(M(\theta_0)\) in between \(M(\hat{\theta}_n)\) and \(M_n(\hat{\theta}_n)\)“\(y\)” values only get close near \(\theta_0\): well separated says that the only place where \(M\) is nearConverging the \(y\) valuesI was originally imagining the first part of the proof using a full \(M(\cdot)\) by \(\theta\) graph but it might be easier to just imagine it as a straight line.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Walking through the delta method</title>
       <link>/2020/07/06/walking-through-the-delta-method/</link>
@@ -53,8 +16,8 @@ Tangent vectors in \(\mathbb{R}^n\) as DerivationsThe book starts with defining
       <description>Imagine we’ve constructed an estimator \(T_n\) for some parameter \(\theta\) but what we really want to know about is \(\phi(\theta)\), some transformation of the parameter.
 Can we use our knowledge of the behavior of \(T_n\) to learn about \(\phi(T_n)\)?
 By the continuous-mapping theorem if \(\phi\) is continuous then:
-if \(T_n \to \theta\)then \(\phi(T_n) \to \phi(\theta)\)By the delta method we have
-if \(\sqrt{n}(T_n - \theta) \rightsquigarrow T\) as \(n \to \infty\)then \(\sqrt{n}(\phi(T_n) - \phi(\theta)) \rightsquigarrow \phi&amp;#39;_\theta(T)\)where \(\phi&amp;#39;_\theta(T) = \phi&amp;#39;(\theta)*T\).</description>
+ if \(T_n \to \theta\) then \(\phi(T_n) \to \phi(\theta)\)  By the delta method we have
+ if \(\sqrt{n}(T_n - \theta) \rightsquigarrow T\) as \(n \to \infty\) then \(\sqrt{n}(\phi(T_n) - \phi(\theta)) \rightsquigarrow \phi&amp;#39;_\theta(T)\)  where \(\phi&amp;#39;_\theta(T) = \phi&amp;#39;(\theta)*T\).</description>
     </item>
     
     <item>

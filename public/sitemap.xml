@@ -4,106 +4,31 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/differential-geometry/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/math/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/math/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/09/22/tangent-vectors-as-derivations/</loc>
-    <lastmod>2020-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/programming/</loc>
-    <lastmod>2020-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2020-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/08/13/setting-up-wsl2-with-r-and-visual-studio-code/</loc>
-    <lastmod>2020-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/likelihood/</loc>
-    <lastmod>2020-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/08/03/some-notation-for-extended-likelihoods/</loc>
-    <lastmod>2020-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/statistics/</loc>
-    <lastmod>2020-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/08/02/not-a-markov-chain/</loc>
-    <lastmod>2020-08-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/07/27/axiomatically-the-frequentist-likelihood-is-invariant-under-parameter-transformation/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/07/27/transforming-the-data-of-a-likelihood-involves-a-jacobian/</loc>
-    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/07/21/model-assisted-frameworks-a-hybrid-between-design-based-and-model-based-frameworks/</loc>
-    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/07/20/design-based-vs-model-based-framework/</loc>
-    <lastmod>2020-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2020/07/10/a-higher-level-examination-of-m-estimator-consistency-proof/</loc>
-    <lastmod>2020-07-10T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/discoveryfiction/</loc>
+    <lastmod>2020-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/math/</loc>
+    <lastmod>2020-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-07-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2020-07-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -123,7 +48,7 @@
   </url>
   
   <url>
-    <loc>/2020/06/30/does-convergence-in-probability-imply-convergence-a-s/</loc>
+    <loc>/tags/math/</loc>
     <lastmod>2020-06-30T00:00:00+00:00</lastmod>
   </url>
   
