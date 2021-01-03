@@ -6,38 +6,15 @@
     <description>Recent content in Posts on Is this Math?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Walking through the delta method</title>
-      <link>/2020/07/06/walking-through-the-delta-method/</link>
-      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      <title>Test Post 2020</title>
+      <link>/2021/01/03/test-post-2020/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2020/07/06/walking-through-the-delta-method/</guid>
-      <description>Imagine we’ve constructed an estimator \(T_n\) for some parameter \(\theta\) but what we really want to know about is \(\phi(\theta)\), some transformation of the parameter.
-Can we use our knowledge of the behavior of \(T_n\) to learn about \(\phi(T_n)\)?
-By the continuous-mapping theorem if \(\phi\) is continuous then:
- if \(T_n \to \theta\) then \(\phi(T_n) \to \phi(\theta)\)  By the delta method we have
- if \(\sqrt{n}(T_n - \theta) \rightsquigarrow T\) as \(n \to \infty\) then \(\sqrt{n}(\phi(T_n) - \phi(\theta)) \rightsquigarrow \phi&amp;#39;_\theta(T)\)  where \(\phi&amp;#39;_\theta(T) = \phi&amp;#39;(\theta)*T\).</description>
-    </item>
-    
-    <item>
-      <title>O notation depends on what limit you&#39;re taking</title>
-      <link>/2020/07/02/o-notation-depends-on-what-limit-you-re-taking/</link>
-      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/02/o-notation-depends-on-what-limit-you-re-taking/</guid>
-      <description>Something that confused me about \(O\) notation was that it appeared to take different meaning between algorithms and calculus. This was resolved by seeing that the notation provides a convenient way of describing the limit of a function \(f(x)\) as \(x\) approaches a specific limit. This point about the \(O\)-ness of a function being contingent on what limit you were taking was the crux of my confusion.
-This limit is typically different between a standard algorithms and calculus course.</description>
-    </item>
-    
-    <item>
-      <title>Calculating the determinent of an equicovariance matrix</title>
-      <link>/2020/06/30/calculating-the-determinent-of-an-equicovariance-matrix/</link>
-      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/06/30/calculating-the-determinent-of-an-equicovariance-matrix/</guid>
-      <description>The goal is to find the determinant by re-writing \(\Sigma\) as a upper triangular matrix. Then [[Determinant of triangular matrix is the product of the diagonal]]
-We add a new row and new column. Recall that the determinant can be defined recursively. Since the new matrix has a \(1\) in the \(\Sigma_{11}\) position, then the determinant remains the same. We aim to eliminate the original off diagonals. We need to remove the lower diagonal for obvious reasons.</description>
+      <guid>/2021/01/03/test-post-2020/</guid>
+      <description>  Test Post for 2020 \[ \frac{1}{2}\]
+ </description>
     </item>
     
   </channel>
