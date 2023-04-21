@@ -55,4 +55,6 @@ content/
 .Ruserdata
 .DS_Store
 Thumbs.db
+public
+resources
 
