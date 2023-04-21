@@ -1,6 +1,6 @@
 baseurl: "http://stone.rbind.io/"
 languageCode: en-us
-title: Stones Site
+title: Stones
 theme: hugo-lithium
 googleAnalytics: ''
 disqusShortname: ''
@@ -16,10 +16,6 @@ menu:
   main:
     - name: About
       url: /about/
-    - name: GitHub
-      url: https://github.com/rstudio/blogdown
-    - name: Twitter
-      url: https://twitter.com/rstudio
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
