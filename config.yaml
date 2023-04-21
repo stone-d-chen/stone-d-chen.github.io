@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: "http://stone.rbind.io/"
 languageCode: en-us
 title: A Hugo website
 theme: hugo-lithium
