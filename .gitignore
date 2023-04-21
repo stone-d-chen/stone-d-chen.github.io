@@ -43,3 +43,11 @@ docs/
 *.Rproj
 static/
 content/
+
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+Thumbs.db

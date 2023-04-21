@@ -1,71 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>statistics on Is this Math?</title>
-    <link>/categories/statistics/</link>
-    <description>Recent content in statistics on Is this Math?</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/statistics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Some notation for extended likelihoods</title>
-      <link>/2020/08/03/some-notation-for-extended-likelihoods/</link>
-      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/08/03/some-notation-for-extended-likelihoods/</guid>
-      <description>Some notation of extended likelihoodsIn classical likelihood theory we have this “duality” between the data-generating view and the likelihood view:
-\(f_\theta(y)\) gives the probability of generating a \(y\) for fixed \(\theta\)\(L_y(\theta)\) gives the likelihood of \(\theta\) for fixed \(y\)We can extend this analogy to the extended likelihood which incorporates random effects. This duality gives a Bayesian-esque flavor (mathematically, not philosophically).
-Characters:
-\(\theta\) – fixed parameters\(v\) – random parameters\(f(\cdot)\) – assorted set of probability distributionsData Generation:Random:\[f_\theta(v)\]</description>
-    </item>
-    
-    <item>
-      <title>Axiomatically, the frequentist likelihood is invariant under parameter transformation</title>
-      <link>/2020/07/27/axiomatically-the-frequentist-likelihood-is-invariant-under-parameter-transformation/</link>
-      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/27/axiomatically-the-frequentist-likelihood-is-invariant-under-parameter-transformation/</guid>
-      <description>Axiomatically, the frequentist likelihood is invariant under parameter transformationThat our inference be invariant under 1-1 data transformation seems like a natural requirement and follows from the definition of the likelihood. That is if we transform the data, we transform the pdf and thus have a new likelihood.
-It seems reasonable to require that the likelihood ratio be invariant under fixed parameter transformation as well: regardless if I estimate \(\sigma^2\) or \(\sigma\) I should have the same amount of information.</description>
-    </item>
-    
-    <item>
-      <title>Transforming the data of a likelihood involves a Jacobian; why the likelihood ratio is the key object</title>
-      <link>/2020/07/27/transforming-the-data-of-a-likelihood-involves-a-jacobian/</link>
-      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/27/transforming-the-data-of-a-likelihood-involves-a-jacobian/</guid>
-      <description>The likelihood ratio is the primary object of interest because if we transform the data \(X\) to \(Y\), our information about a fixed parameter \(\theta\) should not change. This mathematically follows from calculus.
-Transforming the data (random variable) of a likelihood involves a Jacobian term\[L(\theta; y) = L(\theta; x)\left| \frac{\partial x}{\partial y}\right|\]
-The [[Classical definition of the likelihood]] starts with a statistical model and thus a probability density \(p_\theta(x)\).</description>
-    </item>
-    
-    <item>
-      <title>Model-assisted frameworks: a hybrid between design-based and model-based frameworks</title>
-      <link>/2020/07/21/model-assisted-frameworks-a-hybrid-between-design-based-and-model-based-frameworks/</link>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/21/model-assisted-frameworks-a-hybrid-between-design-based-and-model-based-frameworks/</guid>
-      <description>To overcome the limitations of both the pure model-based and pure design-based frameworks, a hybrid model-assisted framework has been developed. In this framework a statistical model is specified to determine the parameters of interest but estimation and inference of said parameters is done under a design-based framework.
-For example consider a model fit on the finite population of size \(N\) as
-\[y_i = \beta_0 + \beta_1x_i\]
-then the finite population quantity of interest are \(\beta_0\) and \(\beta_1\) values that minimizes that squared error:</description>
-    </item>
-    
-    <item>
-      <title>Design-based vs Model-based framework</title>
-      <link>/2020/07/20/design-based-vs-model-based-framework/</link>
-      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/20/design-based-vs-model-based-framework/</guid>
-      <description>The postulate of randomness thus resolves itself into the question, “Of what population is this a random sample?” which must frequently be asked by every practical statistician. (Fisher 1922)
-When we say our sample set is a sample from a population, what population are we talking about?
-In Fisher’s model-based framework, you begin with specifying a statistical model which specifies a data generating process for your \(y_i\)’s. Now imagine we generate and store \(y_i\)’s ad infinitum.</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,48 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>likelihood on Is this Math?</title>
-    <link>/tags/likelihood/</link>
-    <description>Recent content in likelihood on Is this Math?</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/likelihood/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Some notation for extended likelihoods</title>
-      <link>/2020/08/03/some-notation-for-extended-likelihoods/</link>
-      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/08/03/some-notation-for-extended-likelihoods/</guid>
-      <description>Some notation of extended likelihoodsIn classical likelihood theory we have this “duality” between the data-generating view and the likelihood view:
-\(f_\theta(y)\) gives the probability of generating a \(y\) for fixed \(\theta\)\(L_y(\theta)\) gives the likelihood of \(\theta\) for fixed \(y\)We can extend this analogy to the extended likelihood which incorporates random effects. This duality gives a Bayesian-esque flavor (mathematically, not philosophically).
-Characters:
-\(\theta\) – fixed parameters\(v\) – random parameters\(f(\cdot)\) – assorted set of probability distributionsData Generation:Random:\[f_\theta(v)\]</description>
-    </item>
-    
-    <item>
-      <title>Axiomatically, the frequentist likelihood is invariant under parameter transformation</title>
-      <link>/2020/07/27/axiomatically-the-frequentist-likelihood-is-invariant-under-parameter-transformation/</link>
-      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/27/axiomatically-the-frequentist-likelihood-is-invariant-under-parameter-transformation/</guid>
-      <description>Axiomatically, the frequentist likelihood is invariant under parameter transformationThat our inference be invariant under 1-1 data transformation seems like a natural requirement and follows from the definition of the likelihood. That is if we transform the data, we transform the pdf and thus have a new likelihood.
-It seems reasonable to require that the likelihood ratio be invariant under fixed parameter transformation as well: regardless if I estimate \(\sigma^2\) or \(\sigma\) I should have the same amount of information.</description>
-    </item>
-    
-    <item>
-      <title>Transforming the data of a likelihood involves a Jacobian; why the likelihood ratio is the key object</title>
-      <link>/2020/07/27/transforming-the-data-of-a-likelihood-involves-a-jacobian/</link>
-      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/07/27/transforming-the-data-of-a-likelihood-involves-a-jacobian/</guid>
-      <description>The likelihood ratio is the primary object of interest because if we transform the data \(X\) to \(Y\), our information about a fixed parameter \(\theta\) should not change. This mathematically follows from calculus.
-Transforming the data (random variable) of a likelihood involves a Jacobian term\[L(\theta; y) = L(\theta; x)\left| \frac{\partial x}{\partial y}\right|\]
-The [[Classical definition of the likelihood]] starts with a statistical model and thus a probability density \(p_\theta(x)\).</description>
-    </item>
-    
-  </channel>
-</rss>
