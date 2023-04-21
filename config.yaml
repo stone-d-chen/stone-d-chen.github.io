@@ -1,6 +1,6 @@
 baseurl: "http://stone.rbind.io/"
 languageCode: en-us
-title: A Hugo website
+title: Stones Site
 theme: hugo-lithium
 googleAnalytics: ''
 disqusShortname: ''
