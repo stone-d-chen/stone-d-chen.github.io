@@ -45,8 +45,6 @@ vignettes/*.pdf
 # pkgdown site
 docs/
 *.Rproj
-static/
-public/
 
 
 .Rproj.user
