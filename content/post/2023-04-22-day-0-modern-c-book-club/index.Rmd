@@ -26,7 +26,7 @@ So the book definitely assume that we're running MacOS or Linux which is a bit p
 
 Rtools43 is incompatible with previous versions since it relies on UCRT and not MSVCRT[^1]
 
-[^1]: [differences between them](<https://stackoverflow.com/questions/67848972/differences-between-msvcrt-ucrt-and-vcruntime-libraries>)
+[^1]: [differences between them](https://stackoverflow.com/questions/67848972/differences-between-msvcrt-ucrt-and-vcruntime-libraries)
 
 -   Rtools43 consists of Msys2 build tools, GCC 12/MinGW-w64 compiler toolchain, libraries built using the toolchain, and QPDF. Rtools43 supports 64-bit Windows and UCRT as the C runtime.
 
@@ -38,8 +38,6 @@ Rtools43 is incompatible with previous versions since it relies on UCRT and not 
         [MinGW-w64](http://mingw-w64.org/) is a free and open source C library for targetting Windows 32-bit and 64-bit platforms.\
         The combination of these results in a free C/C++ compiler for Windows.
 
-
-
         I think I need to manually make this
 
         Retrieve the latest source code via subversion:
@@ -47,7 +45,7 @@ Rtools43 is incompatible with previous versions since it relies on UCRT and not 
             export TOP_SRCDIR="$HOME/Downloads/R"
             svn checkout https://svn.r-project.org/R/trunk/ "$TOP_SRCDIR"
 
-        I
+Should definitely follow the instructions above. One annoying this is I can't figure out how to get .dotfiles to work with msys so I have manually export the gcc path.
 
 ## The principle structure of a program (C2)
 
@@ -71,4 +69,3 @@ size_t i;
 ```
 
 Above is given as an example though I think it's incorrect. The first is because it let's the program figure out how to call main but does not define it. The second and 3rd are not because it actually allocates space at that time. You'd need to `extern` them. This could be specific to C++ though.
-
